@@ -95,7 +95,7 @@ end
 
 def checkout(cart, coupons)
 
-
+binding.pry
 index = 0
 while index < cart.length do
 new_cart = consolidate_cart(cart[index])
@@ -109,7 +109,7 @@ apply_clear = apply_clearance(apply_coup)
 
 index += 1
 end
-binding.pry
+
 
   # Consult README for inputs and outputs
   #
