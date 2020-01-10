@@ -82,7 +82,7 @@ def apply_clearance(cart)
   while index < cart.length do
 
     if cart[index][:clearance]
-      cart[index][:price] =  cart[index][:price] - (cart[index][:price] * 20 / 100)
+      cart[index][:price] =  cart[index][:price] - (cart[index][:price] * 0.20)
   end
   index += 1
 
@@ -98,6 +98,7 @@ def checkout(cart, coupons)
 new_cart = consolidate_cart(cart)
 apply_coup =  apply_coupons(new_cart, coupons)
 final_cart = apply_clearance(apply_coup)
+  
 total = 0
 index = 0
 while index < final_cart.length do
