@@ -101,7 +101,7 @@ while index < cart.length do
 new_cart = consolidate_cart(cart[index])
 apply_coup =  apply_coupons(new_cart, coupons[index])
 apply_clear = apply_clearance(apply_coup)
- 
+
 
 
 
