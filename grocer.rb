@@ -20,8 +20,8 @@ index = 0
 
 while index < cart.length do
 
-name = cart[index][:item]
-cart_item = find_item_by_name_in_collection(name, cart)
+
+cart_item = find_item_by_name_in_collection(cart[index][:item], cart)
 
 if cart_item != nil
   cart_item[:count] += 1
