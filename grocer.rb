@@ -104,6 +104,7 @@ new_array = consolidate_cart(cart[index])
 
 index += 1
 end
+puts new_array
   # Consult README for inputs and outputs
   #
   # This method should call
