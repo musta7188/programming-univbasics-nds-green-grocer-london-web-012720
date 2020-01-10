@@ -23,7 +23,7 @@ while index < cart.length do
 
 cart_item = find_item_by_name_in_collection(cart[index][:item], cart)
 
-if cart_item != nil
+if cart_item = nil
   cart_item[:count] += 1
 else
   cart_item = {
