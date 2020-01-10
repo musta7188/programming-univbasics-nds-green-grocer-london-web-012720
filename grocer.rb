@@ -95,9 +95,10 @@ end
 
 def checkout(cart, coupons)
 
+new_array = []
 index = 0
 while index < cart.length do
- consolidate_cart(cart[index])
+ new_array << consolidate_cart(cart[index])
 
 
 
