@@ -32,6 +32,7 @@ else
     clearance: cart[index][:clearance],
     count: 1
   }
+  new_array << cart_item
 end
 
 index += 1
