@@ -29,10 +29,10 @@ if !cart_item == nil
   cart_item[:count] += 1
 else
   cart_item = {
-    item: cart[index][:item],
-    price: cart[index][:price],
-    clearance: cart[index][:clearance],
-    count: 1
+    :item => cart[index][:item],
+    :price => cart[index][:price],
+    :clearance => cart[index][:clearance],
+    :count => 1
   }
   new_array << cart_item
 end
