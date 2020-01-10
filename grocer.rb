@@ -6,8 +6,6 @@ index  = 0
 while index < collection.length do
   if collection[index][:item] === name
     return collection[index]
-  else
-    nil
   end
   index += 1
 end
