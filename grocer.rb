@@ -21,13 +21,17 @@ index = 0
 while index < cart.length do
 
 name = cart[index][:item]
-add = find_item_by_name_in_collection(name, cart)
-new_array << add
+cart_item = find_item_by_name_in_collection(name, cart)
 
-if !new_array[index][:count]
-  new_array[index][:count] = 1
+if cart_item != nil
+  cart_item[:count] += 1
 else
-  new_array[index][:count] += 1
+  cart_item = {
+    item:cart[index][:item],
+    price: cart[index][:price],
+    clearance: cart[index][:clearance],
+    count: 1
+  }
 end
 
 index += 1
