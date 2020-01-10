@@ -99,6 +99,7 @@ def checkout(cart, coupons)
 index = 0
 while index < cart.length do
 new_cart = consolidate_cart(cart[index])
+apply_coup =  apply_coupons(new_cart, coupons[index])
 
 
 
