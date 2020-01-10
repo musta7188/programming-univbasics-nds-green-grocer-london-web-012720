@@ -106,7 +106,7 @@ apply_coup =  apply_coupons(new_cart, coupons[index])
 
 index += 1
 end
-return new_array
+
   # Consult README for inputs and outputs
   #
   # This method should call
