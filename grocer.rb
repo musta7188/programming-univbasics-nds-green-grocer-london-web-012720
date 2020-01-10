@@ -103,25 +103,12 @@ index = 0
 while index < final_cart.length do
 
 total += final_cart[index][:price] * final_cart[index][:count]
-
-
-
-
 index += 1
 end
 if total > 100
- total -= (total - 0.10)
+ total -= (total * 0.10)
 
 end
 total
 
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
 end
