@@ -80,7 +80,7 @@ end
 def apply_clearance(cart)
   index  = 0
   while index < cart.length do
-    if cart[index][:clearance] === true
+    if cart[index][:clearance] 
       cart[index][:price] = cart[index][:price] / 20 *100
 
   end
