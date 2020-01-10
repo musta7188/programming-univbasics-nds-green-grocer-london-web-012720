@@ -105,7 +105,7 @@ while index < final_cart.length do
 total += final_cart[index][:price]
 
 if total > 100
-  total = total - total * 20 / 100
+ total - total * 20 / 100
 
 end
 
