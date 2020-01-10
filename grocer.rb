@@ -105,7 +105,7 @@ while index < cart.length do
 
 index += 1
 end
-return new_array
+puts new_array
   # Consult README for inputs and outputs
   #
   # This method should call
