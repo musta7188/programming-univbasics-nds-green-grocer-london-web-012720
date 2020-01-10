@@ -95,9 +95,15 @@ end
 
 def checkout(cart, coupons)
 
-new_array = consolidate_cart(cart)
+index = 0
+while index < cart.length do
+new_array = consolidate_cart(cart[index])
 
-puts new_array
+
+
+
+index += 1
+end
   # Consult README for inputs and outputs
   #
   # This method should call
