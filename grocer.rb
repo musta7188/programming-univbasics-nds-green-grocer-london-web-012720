@@ -96,7 +96,7 @@ end
 def checkout(cart, coupons)
 
 new_cart = consolidate_cart(cart)
-apply_coup =  apply_coupons(new_cart)
+apply_coup =  apply_coupons(new_cart, coupons)
 final_cart = apply_clearance(apply_coup)
 total = 0
 index = 0
